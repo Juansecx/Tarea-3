@@ -5,66 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Principal</title>
+    <link
+      href="//db.onlinewebfonts.com/c/97c4b25dc74e0ab045154e75a8fdd69d?family=Game+of+Thrones"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="estilos/principal.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container px-5">
-        <a class="navbar-brand" href="index.html"
-          ><img src="assets/got.png"
-        /></a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
+    <nav>
+        <a href="index.html"><img src="assets/got.png" /></a>
+          <ul>
+            <li>
+              <a href="index.html" class="link">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="products.html">Productos</a>
+            <li>
+              <a href="products.html" class="link">Productos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="video_library.html">Videoteca</a>
+            <li>
+              <a href="video_library.html" class="link">Videoteca</a>
             </li>
           </ul>
-        </div>
-      </div>
     </nav>
     <main>
       <h1>Bienvenidos al mundo de Game of Thrones</h1>
       <p>
         Juego de tronos es la historia de la lucha por un trono, el trono de
         hierro, forjado con las espadas de los enemigos vencidos. Siete son los
-        reinos de Poniente y muchas las casas que se disputarán la corona: los
+        reinos de Poniente y muchas las casas que se disputaran la corona: los
         herederos, los exiliados, los despojados y los actuales regentes.
       </p>
-      <img src="assets/trono.jpg">
+      <img src="assets/trono.jpg" />
     </main>
     <div id="api">
-        <h2>Selecciona una familia para mostrar sus miembros:</h2>
-        <select name="familia">
-            <option value="selecciona">Selecciona una familia</option>
-            <option value="House Targaryen">Casa Targaryen</option>
-            <option value="House Stark">Casa Stark</option>
-            <option value="House Baratheon">Casa Baratheon</option>
-            <option value="House Lannister">Casa Lannister</option>
-          </select>
-          <div id="porCasa">
-          </div>
+      <h2>Selecciona una familia para mostrar sus miembros:</h2>
+      <select name="familia">
+        <option value="selecciona">Selecciona una familia</option>
+        <option value="House Targaryen">Casa Targaryen</option>
+        <option value="House Stark">Casa Stark</option>
+        <option value="House Baratheon">Casa Baratheon</option>
+        <option value="House Lannister">Casa Lannister</option>
+      </select>
+      <div id="porCasa"></div>
     </div>
     <footer>
-        <address>
-            <p>C/Principal</p>
-            <p>Sevilla</p>
-          </address>
-          <div>
-            <p>
-              Página de Contacto:
-              <a href="https://moodle.iesmartinezm.es">moodle iesmartinezm.es</a>
-            </p>
-          </div>
-          <div>
-            <a href="https://www.snapchat.com/"><img alt="icono de Snapchat" src="assets/snapchat.jpg"/></a>
-            <a href="https://es-es.facebook.com/"><img alt="icono de Facebook" src="assets/facebook.jpg"/></a>
-            <a href="https://twitter.com/"><img alt="icono de Twitter" src="assets/twitter.jpg"/></a>
-          </div>
+      <address>
+        <p>C/Principal</p>
+        <p>Sevilla</p>
+      </address>
+      <div>
+        <p>
+          Pagina de Contacto:
+          <a href="https://moodle.iesmartinezm.es">moodle iesmartinezm.es</a>
+        </p>
+      </div>
+      <div>
+        <a href="https://www.snapchat.com/"
+          ><img alt="icono de Snapchat" src="assets/snapchat.jpg"
+        /></a>
+        <a href="https://es-es.facebook.com/"
+          ><img alt="icono de Facebook" src="assets/facebook.jpg"
+        /></a>
+        <a href="https://twitter.com/"
+          ><img alt="icono de Twitter" src="assets/twitter.jpg"
+        /></a>
+      </div>
     </footer>
     <script src="scripts/familias.js"></script>
   </body>
