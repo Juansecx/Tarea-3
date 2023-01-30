@@ -29,7 +29,8 @@ html {
 
 nav img {
   filter: invert();
-  width: 15%;
+  width: 10%;
+  height: 90%;
 }
 
 a {
@@ -49,6 +50,7 @@ nav {
   position: sticky;
   top:0;
   background-color: #090909;
+  z-index: 200;
 }
 
 ul {
