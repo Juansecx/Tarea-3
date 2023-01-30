@@ -16,8 +16,8 @@ body {
 }
 /* NAVEGADOR */
 
-html{
-height: 100%;
+html {
+  height: 100%;
 }
 .container {
   display: grid;
@@ -77,8 +77,6 @@ ul {
   scale: 1;
 }
 
-
-
 footer a,
 p {
   text-decoration: none;
@@ -94,140 +92,124 @@ footer {
   grid-area: foot;
 }
 
-footer div{
-  
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main {
   grid-area: main;
   display: grid;
   grid-template:
-  "funk1 funk2 funk3 funk4" 
-  "funk5 funk6 funk7 funk8";
+    "funk1 funk2 funk3 funk4"
+    "funk5 funk6 funk7 funk8";
   align-items: stretch;
   justify-content: space-around;
   gap: 20px;
   margin: 20px;
 }
 
-
+main .funk1,
+main .funk2,
+main .funk3,
+main .funk4,
+main .funk5,
+main .funk6,
+main .funk7,
+main .funk8 {
+  display: grid;
+  border: 1px solid snow;
+}
 
 main .funk1 {
-
-    grid-area: funk1;
-    background-color: beige;
-
+  grid-area: funk1;
+  background-color: beige;
 }
 
-main .funk1,main .funk2,main .funk3,main .funk4,main .funk5,main .funk6,main .funk7,main .funk8 {
-
-    display: grid;
-    border: 1px solid snow;
-    
-}
-
-main img {
-  width: 100%;
-  height: 200px;
-}
 main .funk1 .parrafo {
-
-    background-color: #090909;
-    
+  background-color: #090909;
 }
 
-
-main .funk2{
-    grid-area: funk2;
-    background-color: beige;
+main .funk2 {
+  grid-area: funk2;
+  background-color: beige;
 }
 
 main .funk2 .parrafo {
-
-    background-color: #090909;
-    
+  background-color: #090909;
 }
 
-main .funk3{
-    grid-area: funk3;
-    background-color: beige;
+main .funk3 {
+  grid-area: funk3;
+  background-color: beige;
 }
 
 main .funk3 .parrafo {
-
-    background-color: #090909;
-    
+  background-color: #090909;
 }
 
-main .funk4{
-    grid-area: funk4;
-    background-color: beige;
+main .funk4 {
+  grid-area: funk4;
+  background-color: beige;
 }
 
 main .funk4 .parrafo {
-
-    background-color: #090909;
-    
+  background-color: #090909;
 }
 
-main .funk5{
-    grid-area: funk5;
-    background-color: beige;
+main .funk5 {
+  grid-area: funk5;
+  background-color: beige;
 }
 
 main .funk5 .parrafo {
-
-    background-color: #090909;
-    
+  background-color: #090909;
 }
 
-main .funk6{
-    grid-area: funk6;
-    background-color: beige;
+main .funk6 {
+  grid-area: funk6;
+  background-color: beige;
 }
 
 main .funk6 .parrafo {
-
-    background-color: #090909;
-    
+  background-color: #090909;
 }
 
-main .funk7{
-    grid-area: funk7;
-    background-color: beige;
+main .funk7 {
+  grid-area: funk7;
+  background-color: beige;
 }
 
 main .funk7 .parrafo {
-
-    background-color: #090909;
-    
+  background-color: #090909;
 }
 
-main .funk8{
-    grid-area: funk8;
-    background-color: beige;
+main .funk8 {
+  grid-area: funk8;
+  background-color: beige;
 }
 
 main .funk8 .parrafo {
-
-    background-color: #090909;
-    
+  background-color: #090909;
 }
 main div p {
   font-size: 0.5em;
 }
 
-footer div img {
-
-height: 30%;
-
+footer div a img {
+  height: 5em;
 }
 
-footer div:nth-child(3) img{
-
-    margin: 10px;
-
+footer div a img {
+  margin: 10px;
 }
+
+footer div p a {
+
+  font-size: 1em;
+
+  
+}
+
+
