@@ -46,6 +46,9 @@ nav {
   justify-content: space-around;
   border-bottom: 1px solid;
   grid-area: nav;
+  position: sticky;
+  top:0;
+  background-color: #090909;
 }
 
 ul {
@@ -119,82 +122,49 @@ main .funk6,
 main .funk7,
 main .funk8 {
   display: grid;
+  grid-template:
+    "imagen" 80%
+    "descrip" auto;
+  /* gap: 10px; */
   border: 1px solid snow;
+  position: relative;
 }
 
 main .funk1 {
   grid-area: funk1;
-  background-color: beige;
-}
-
-main .funk1 .parrafo {
-  background-color: #090909;
 }
 
 main .funk2 {
   grid-area: funk2;
-  background-color: beige;
-}
-
-main .funk2 .parrafo {
-  background-color: #090909;
 }
 
 main .funk3 {
   grid-area: funk3;
-  background-color: beige;
-}
-
-main .funk3 .parrafo {
-  background-color: #090909;
 }
 
 main .funk4 {
   grid-area: funk4;
-  background-color: beige;
-}
-
-main .funk4 .parrafo {
-  background-color: #090909;
 }
 
 main .funk5 {
   grid-area: funk5;
-  background-color: beige;
-}
-
-main .funk5 .parrafo {
-  background-color: #090909;
 }
 
 main .funk6 {
   grid-area: funk6;
-  background-color: beige;
-}
-
-main .funk6 .parrafo {
-  background-color: #090909;
 }
 
 main .funk7 {
   grid-area: funk7;
-  background-color: beige;
-}
-
-main .funk7 .parrafo {
-  background-color: #090909;
 }
 
 main .funk8 {
   grid-area: funk8;
-  background-color: beige;
 }
 
-main .funk8 .parrafo {
-  background-color: #090909;
-}
 main div p {
-  font-size: 0.5em;
+  font-size: 1.1vh;
+  padding: 1em;
 }
 
 footer div a img {
@@ -206,10 +176,35 @@ footer div a img {
 }
 
 footer div p a {
-
   font-size: 1em;
-
-  
 }
 
+main .image {
+  background-color: aqua;
+  grid-area: imagen;
+}
 
+main .image img {
+  width: 100%;
+  height: 100%;
+}
+
+main .parrafo {
+  grid-area: descrip;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+main .funk1:hover,
+main .funk2:hover,
+main .funk3:hover,
+main .funk4:hover,
+main .funk5:hover,
+main .funk6:hover,
+main .funk7:hover,
+main .funk8:hover {
+  bottom: 5px;
+  box-shadow: 0px 1px 5px white;
+}
