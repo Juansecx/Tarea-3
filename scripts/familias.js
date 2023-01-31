@@ -34,7 +34,7 @@ function mostrar(personajes, donde) {
       //Cuando introducimos el id, solo devuelve un personaje por lo tanto no necesitamos recorrerlo con un for
       //Creo un div para mostrar el personaje por Id
       let div = document.createElement("div");
-      div.classList = "tarjetaId";
+      div.id = "tarjetaId";
       divDonde.appendChild(div);
   
       //Metemos la imagen

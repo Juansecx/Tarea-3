@@ -14,10 +14,24 @@
     background-color: #090909;
     height: 100vh;
     display: grid;
+    grid-template: 
+    "nav" 100px
+    "main" 500px
+    "api" 800px
+    "pie" 100px /
+    100%;
     place-items: center;
   }
 
 /* NAVEGADOR */
+
+nav {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  grid-area: nav;
+}
   nav img{
     filter: invert();
     width: 20%;
@@ -27,13 +41,6 @@
     text-decoration: none;
     color: inherit;
     font-size: 20px;
-  }
-  
-  nav {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    gap: 25px;
   }
   
   ul {
@@ -65,7 +72,129 @@
     scale: 1;
   }
 
-h1, p, h2, h3, a{
+h1, p, h2, h3, a, h4{
     font-family: "Got";
     color: white;
 }
+/*MAIN */
+main{
+  grid-area: main;
+  display: grid;
+  grid-template:
+  "titulo titulo"100px 
+  "trono texto" 400px/
+  50% 50%;
+}
+/* TÍTULO */
+
+#titulo{
+  grid-area: titulo;
+  text-align: center;
+  padding-top: 20px;
+  border-top:solid white 1px;
+}
+
+/* BLOQUE TRONO-TEXTO */
+#trono{
+  grid-area: trono;
+  width: 80%;
+  margin: 0px auto;
+  }
+
+#texto{
+grid-area: texto;
+text-align: center;
+font-size: 1.5vh;
+}
+
+/*API*/
+#api{
+  grid-area: api;
+  width: 90%;
+  grid-template:
+  "titSel" 50px
+  "selector" 50px
+  "porCasa" 700px /
+  100%;
+}
+
+#api h2{
+grid-area: titSel;
+margin-top: 80px;
+padding-top: 15px;
+border-top: solid white 1px;
+}
+
+#api select{
+  grid-area: selector;
+}
+
+#api #porCasa{
+  grid-area: porCasa;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: 
+  "img1 img2 img3 img4" 300px
+  "img5 img6 img7 img8" 300px/
+    20% 20% 20% 20%;
+    margin: 50px auto;
+    grid-gap: 30px; 
+  
+  margin: 0px auto;
+}
+.tarjetaCasa{
+  margin-top: 15px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 15px;
+}
+#porCasa img{
+    
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 15px;
+    height: 200px;
+}
+
+#api h4{
+  color: rgb(0, 0, 0);
+}
+#api p{
+  color: rgb(0, 0, 0);
+}
+/* FOOTER */
+footer a,
+p {
+  text-decoration: none;
+  font-size: 0.5em;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid white;
+  grid-area: pie;
+  width: 100%;
+}
+
+footer div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div a img {
+  height: 5em;
+}
+
+footer div a img {
+  margin: 10px;
+}
+
+footer div p a {
+  font-size: 1em;
+}
+
